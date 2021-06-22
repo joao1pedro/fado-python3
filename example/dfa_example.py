@@ -29,3 +29,5 @@ print(automata.evalWordP('0001'))
 print('\n')
 print('verify word w = 11111')
 print(automata.evalWordP('11111'))
+
+automata.display('dfa')

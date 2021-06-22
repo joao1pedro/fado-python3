@@ -1,0 +1,13 @@
+digraph finite_state_machine {
+rankdir=LR;
+size="30,20";
+node [shape = point]; "dummyq0"
+node [shape = circle]; "q0";
+"dummyq0" -> "q0";
+node [shape = circle]; "q1";
+node [shape = doublecircle]; "q2";"q0" -> "q0" [label = "0"];
+ "q0" -> "q1" [label = "0"];
+ "q1" -> "q0" [label = "1"];
+ "q1" -> "q2" [label = "0"];
+ "q2" -> "q2" [label = "0"];
+ }
